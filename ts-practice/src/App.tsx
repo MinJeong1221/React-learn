@@ -6,6 +6,8 @@ import React from 'react';
 // import Event from './pages/2-7/Event';
 // import Greeting from './pages/2-8/Greeting';
 import List from './pages/2-9/List';
+import Controlled from './pages/2-10/Controlled';
+import UnControlled from './pages/2-10/UnControlled';
 
 function App() {
   // const comment = {
@@ -28,7 +30,9 @@ function App() {
       {/* <ClassClock /> */}
       {/* <Event /> */}
       {/* <Greeting /> */}
-      <List/>
+      {/* <List/> */}
+      <Controlled/>
+      <UnControlled/>
     </>
   );
 }
