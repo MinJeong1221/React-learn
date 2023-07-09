@@ -9,8 +9,9 @@
 // import Controlled from './pages/2-10/Controlled';
 // import UnControlled from './pages/2-10/UnControlled';
 // import Calculator from './pages/2-11/Calculator';
-import Composite from './pages/2-12/Composite';
-import Specialize from './pages/2-12/Specialize';
+// import Composite from './pages/2-12/Composite';
+// import Specialize from './pages/2-12/Specialize';
+import FilterableProductTable from './pages/2-13/FilterableProductTable';
 
 function App() {
   // const comment = {
@@ -37,8 +38,9 @@ function App() {
       {/* <Controlled /> */}
       {/* <UnControlled /> */}
       {/* <Calculator /> */}
-      <Composite />
-      <Specialize />
+      {/* <Composite /> */}
+      {/* <Specialize /> */}
+      <FilterableProductTable />
     </>
   );
 }
