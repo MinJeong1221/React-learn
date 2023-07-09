@@ -1,14 +1,16 @@
-import React from 'react';
+// import React from 'react';
 // import Clock from './pages/2-4/Clock';
 // import Composition from './pages/2-5/Composition';
 // import Extraction from './pages/2-5/Extraction';
 // import ClassClock from './pages/2-6/ClassClock'
 // import Event from './pages/2-7/Event';
 // import Greeting from './pages/2-8/Greeting';
-import List from './pages/2-9/List';
-import Controlled from './pages/2-10/Controlled';
-import UnControlled from './pages/2-10/UnControlled';
-import Calculator from './pages/2-11/Calculator';
+// import List from './pages/2-9/List';
+// import Controlled from './pages/2-10/Controlled';
+// import UnControlled from './pages/2-10/UnControlled';
+// import Calculator from './pages/2-11/Calculator';
+import Composite from './pages/2-12/Composite';
+import Specialize from './pages/2-12/Specialize';
 
 function App() {
   // const comment = {
@@ -31,10 +33,12 @@ function App() {
       {/* <ClassClock /> */}
       {/* <Event /> */}
       {/* <Greeting /> */}
-      {/* <List/> */}
-      {/* <Controlled/> */}
-      {/* <UnControlled/> */}
-      <Calculator/>
+      {/* <List /> */}
+      {/* <Controlled /> */}
+      {/* <UnControlled /> */}
+      {/* <Calculator /> */}
+      <Composite />
+      <Specialize />
     </>
   );
 }
