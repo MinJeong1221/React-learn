@@ -9,8 +9,11 @@ import React from 'react';
 // import BootStrap from './pages/3-3/BootStrap';
 // import Tailwind from './pages/3-3/Tailwind';
 // import Mocking from './pages/3-4/Mocking';
-import Counter from './pages/5-5/Counter';
-import Counter2 from './pages/5-5/Counter2';
+// import Counter from './pages/3-5/Counter';
+// import Counter2 from './pages/3-5/Counter2';
+// import Profile from './pages/3-6/Profile';
+// import Page from './pages/3-6/Page';
+import Cache from './pages/3-6/Cache';
 
 function App() {
   return (
@@ -25,8 +28,11 @@ function App() {
         {/* <BootStrap /> */}
         {/* <Tailwind /> */}
         {/* <Mocking /> */}
-        <Counter />
-        <Counter2 />
+        {/* <Counter /> */}
+        {/* <Counter2 /> */}
+        {/* <Profile /> */}
+        {/* <Page /> */}
+        <Cache />
       </div>
     </>
   );
