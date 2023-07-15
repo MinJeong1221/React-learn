@@ -3,12 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './store/store';
+import { Provider } from 'react-redux';
+
+if (process.env.NODE_ENV === 'development') {
+  const { worker } = require('./mock/browser');
+  worker.start();
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>,
+  // </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function

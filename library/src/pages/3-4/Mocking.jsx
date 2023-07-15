@@ -3,9 +3,13 @@ import React from 'react';
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 
-const Item = ({ name, email }) => {
-  return <li>{`name:${name} email:${email}`}</li>;
-};
+// function Item({ name, email }) {
+//   return (
+//     <li>
+//       name:{name} email:${email}
+//     </li>
+//   );
+// }
 
 function Mocking() {
   const [data, setData] = React.useState(null);
@@ -49,13 +53,16 @@ function Mocking() {
     <div>
       <button onClick={handleClickButton}>GET DATA</button>
       <button onClick={handleClickButton2}>GET DATA2</button>
-      {data && (
-        <ul>
-          {data.map(user => {
-            <Item key={user.id} name={user.name} email={user.email}></Item>;
-          })}
-        </ul>
-      )}
+
+      <ul>
+        {data
+          ? data.map(d => {
+              <li key={d.id}>
+                name: {d.name} email: {d.email}
+              </li>;
+            })
+          : 'null'}
+      </ul>
     </div>
   );
 }
